@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogar</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Hogar</h1>
+        <header id="navbar-container"></header>
+        <script>
+            // Cargar el menú dinámicamente
+            fetch("menu.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar-container").innerHTML = data;
+    
+                    // Usar setTimeout para asegurarnos de que el contenido esté cargado completamente
+                    setTimeout(function() {
+                        // Obtener la URL actual
+                        let currentUrl = window.location.pathname.split("/").pop();
+    
+                        // Seleccionar todos los enlaces del navbar
+                        let links = document.querySelectorAll(".navbar-nav .nav-link .dropdown-menu-link");
+    
+                        // Recorre todos los enlaces y agrega la clase 'active' al que coincida con la URL actual
+                        links.forEach(link => {
+                            let linkHref = link.getAttribute("href").split("/").pop();  // Obtiene el nombre del enlace
+    
+                            // Elimina la clase active de todos los enlaces antes de agregarla al seleccionado
+                            link.classList.remove("active");
+
+    
+                            if (linkHref === currentUrl) {
+                                // Agregar la clase active al enlace correspondiente
+                                link.classList.add("active");
+                            }
+                        });
+                    }, 100);  // Retardo de 100ms para asegurarse de que el DOM esté actualizado
+                });
+        </script>
+    </header>
+
+    <footer>
+        <p>&copy; 2025 Siman El Salvador</p>
+    </footer>
+</body>
+</html>

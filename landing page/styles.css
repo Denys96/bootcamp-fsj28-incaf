@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #d32f2f;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección principal */
+.hero {
+    background-image: url('img/NT-SGM6688.png');
+    background-size: cover;
+    color: white;
+    padding: 150px 20px;
+}
+
+.button {
+    background-color: #ffbf5f;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.hero .btn {
+    background-color: #ff9800;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.hero h2 {
+
+    margin: 0;
+    color: rgb(247, 4, 4);
+}
+.hero p {
+ 
+    margin: 20px 0;
+    color: rgb(247, 4, 4);
+}
+.hero a {
+
+    margin: 20px 0;
+    color: rgb(247, 4, 4);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #d32f2f; /* Cambia este color según tu preferencia */
+    color: #ffffff; /* Ajusta el color del texto si es necesario */
+    border-radius: 5px; /* Agrega esquinas redondeadas (opcional) */
+    transition: background-color 0.3s ease-in-out; /* Transición suave */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #d32f2f;
+    color: #ffffff;
+}
+
+.nav-link.active {
+    background-color: #d32f2f !important;
+    color: #ffffff !important;
+    border-radius: 5px;
+}
