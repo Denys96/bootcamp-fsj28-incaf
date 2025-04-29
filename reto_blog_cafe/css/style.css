@@ -7,11 +7,12 @@
 :root {
     --negro: #000;
     --blanco: #fff;
+    --gris: #d6d4d4;
 }
 
 .header {
     background-image: url(../imagenes/banner.jpg);
-    height: 60rem;
+    height: 50rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -23,14 +24,31 @@
 a {
     text-decoration: none;
     color: var(--blanco);
+    font-weight: 700;
 }
 
 h1 {
     line-height: 1.5;
-    font-size: 3rem;
-    padding-left: 3rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+h2 {
+    font-size: 2.5rem;
 }
 
+h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+p {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
 .no-margin {
     margin: 0;
 }
@@ -42,19 +60,23 @@ h1 {
     text-align: center;
 }
 
-.nombre {
-    font-weight: 400;
-}
 .contenedor {
-    margin-top: 4rem;
+    max-width: 120rem;
     width: 90%;
+    margin: 2rem auto;
 }
 
 .nav__enlace {
     display: block;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
+
+.nav__enlace:hover, .active{
+    cursor: pointer;
+    color: #6D4C41;
+}
+
 
 @media (min-width: 768px) {
     .navegacion {
@@ -64,7 +86,15 @@ h1 {
     .contenedor {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+    }
+
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+    .boton{
+        display: inline-block;
     }
 }
 
@@ -73,3 +103,102 @@ h1 {
     margin-top: 15rem;
 }
 
+.entrada {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.cursos {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+    list-style: none;
+}
+
+.cursos:last-of-type{
+    border: none;
+}
+
+.curso-1 {
+    border-bottom: 1px solid var(--gris);
+}
+
+.curso-1:last-of-type{
+    border: none;
+    margin: 0;
+}
+.curso-1__label, .curso__label {
+    font-weight: 700;
+}
+.curso-1__info, .curso__info {
+    font-weight: 400;
+}
+.curso-1__label, .curso-1__info,
+.curso__label, .curso__info {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+
+.boton {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 0.7rem 4rem;
+    margin: 1rem;
+
+}
+.boton:hover {
+    cursor: pointer;
+}
+
+
+.img-curso {
+    width: 150px;
+    padding: 1rem;
+}
+
+.tittle-curso {
+    text-align: center;
+    padding: 4rem;
+    font-size: 30px;
+}
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin: 1rem auto;
+
+
+}
+
+thead {
+    background-color: #6D4C41; /* Marrón */
+    color: white;
+}
+
+thead th {
+    padding: 1rem;
+}
+
+.table-header:nth-child(1) {
+    text-align: left; /* Título */
+}
+
+.table-body {
+    border-bottom: 1px solid #6D4C41;
+}
+
+
+.footer {
+    background-color: var(--negro);
+    padding: 2rem 2rem;
+    color: var(--blanco);
+    text-align: center;
+}
+.footer-texto {
+    font-size: 1.5rem;
+}

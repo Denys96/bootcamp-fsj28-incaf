@@ -10,12 +10,12 @@
     <header class="header">
         <section class="contenedor">
             <a href="index.html">
-                <h1 class="nombre no-margin centrar-texto">Blog DeCafe</h1>
+                <h1 class="nombre no-margin">Blog DeCafe</h1>
             </a>
             
             <nav class="navegacion">
-                <a class="nav__enlace" href="#">Curso</a>
-                <a class="nav__enlace" href="#">Contatco</a>
+                <a class="nav__enlace" href="cursos.html">Curso</a>
+                <a class="nav__enlace" href="#">Contacto</a>
                 <a class="nav__enlace" href="#">Nosotros</a>
             </nav>
 
@@ -28,15 +28,69 @@
         </section>
 
     </header>
-<main>
+<main class="contenedor contenido-principal">
+    <div class="blog">
+        <h2> Nuestro Blog</h2>
+        <section class="entrada">
+            <article class="entrada-blog">
+                <picture class="entrada-blog__imagen">
+                    <img src="../reto_blog_cafe/imagenes/blog1.jpg" alt="blog1">
+                </picture>
+            </article>
+            <article class="entrada__contenido">
+                <h3>Tipos de Grano de Café</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quisquam aperiam nam perspiciatis sapiente necessitatibus, aliquid perferendis. Quae omnis incidunt, inventore ea deleniti impedit praesentium quia saepe harum atque ad, sit odit ut modi ipsa voluptatem corporis officiis deserunt! Incidunt a odit neque provident animi adipisci qui quasi reiciendis corrupti!</p>
+                <button class="boton" href="#">Leer más</button>
+
+            </article>
+        </section>
+
+        <section class="entrada">
+            <article class="entrada-blog">
+                <picture class="entrada-blog__imagen">
+                    <img src="../reto_blog_cafe/imagenes/blog2.jpg" alt="blog2">
+                </picture>
+            </article>
+            <article class="entrada__contenido">
+                <h3>Tipos de Grano de Café</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quisquam aperiam nam perspiciatis sapiente necessitatibus, aliquid perferendis. Quae omnis incidunt, inventore ea deleniti impedit praesentium quia saepe harum atque ad, sit odit ut modi ipsa voluptatem corporis officiis deserunt! Incidunt a odit neque provident animi adipisci qui quasi reiciendis corrupti!</p>
+                <button class="boton" href="#">Leer más</button>
+            </article>
+        </section>
+
+    </div>
+
+    <aside class="sidebar">
+        <h3>Nuestros Cursos y Talleres</h3>
+        <ul class="cursos no-padding">
+            <li class="curso-1">
+                <h4 class="no-margin">Tecnicas de Extraccion de Café</h4>
+                <p class="curso-1__label">Precio: 
+                    <span class="curso-1__info">Gratis</span> 
+                </p>
+                <p class="curso-1__label">Cupo: 
+                    <span class="curso-1__info">20</span> 
+                </p>
+                <button href="#" class="boton">Mas Información sobre nuestro curso</button>
+            </li>
+            <li class="curso-1">
+                <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
+                <p class="curso-1__label">Precio: 
+                    <span class="curso-1__info">Gratis</span> 
+                </p>
+                <p class="curso-1__label">Cupo: 
+                    <span class="curso-1__info">20</span> 
+                </p>
+                <button href="#" class="boton">Mas Información sobre nuestro curso</button>
+            </li>
+        </ul>
+    </aside>
 
 </main>
-<aside>
 
-</aside>
 
-<footer>
-    <h2>BlogDeCafe</h2>
+<footer class="footer">
+    <h2 class="footer-texto">BlogDeCafe Denys Hernandez ©</h2>
 </footer>
 
 </body>

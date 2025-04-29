@@ -72,7 +72,7 @@ figure img {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
 td {
